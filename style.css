@@ -1,0 +1,229 @@
+/* Header */
+.header{
+    width:100%;
+}
+
+/* Background */
+.content{
+    background-image:url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.container-fluid.content {
+    padding-top: 15px;
+}
+img#videopicture {
+    width:100%;
+}
+button#event {
+    margin-top: -15px;
+    border-radius: 0px;
+    background-color: #ea8e1d;
+    width: 100%;
+    font-size: 75px;
+    -webkit-box-shadow: 1px 1px 17px 1px rgba(0,0,0,0.38);
+	-moz-box-shadow: 1px 1px 17px 1px rgba(0,0,0,0.38);
+	box-shadow: 1px 1px 17px 1px rgba(0,0,0,0.38);
+}
+
+/* footer */
+.footer{
+	background-image: url(/images/FF.footer.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: cover;
+    padding:80px 0;
+	
+}
+
+img.img-responsive.footer {
+    border-style: solid;
+    border-top-color: #ea8e1d;
+    border-top-width: 5px;
+}
+button.btn.btn-primary{
+	color: #fff;
+    background-color: transparent;
+    border-color: #ea8e1d;
+    border-radius: 0px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 45px;
+    border-width: 5px;
+}
+.row{
+    margin-right:0px;
+    margin-left:0px;
+    padding: 15px;
+}
+
+
+/* countdown */
+body{ 
+	font: normal 13px/20px Arial, Helvetica, sans-serif; word-wrap:break-word;
+	color: #eee;
+	background: #353535;
+}
+#countdown{
+ 	width: 100%;
+	height: 112px;
+	text-align: center;
+	margin: auto;
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#countdown:before{
+	content:"";
+	width: 8px;
+	height: 65px;
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #555, #444, #444, #555); 
+	background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
+	background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
+	background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
+	border: 1px solid #111;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	display: block;
+	position: absolute;
+	top: 48px; left: -10px;
+}
+
+#countdown:after{
+	content:"";
+	width: 8px;
+	height: 65px;
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #555, #444, #444, #555); 
+	background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
+	background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
+	background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
+	border: 1px solid #111;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	display: block;
+	position: absolute;
+	top: 48px; right: -10px;
+}
+
+#countdown #tiles > span{
+    width: 268px;
+    font: bold 48px 'Droid Sans', Arial, sans-serif;
+    text-align: center;
+    color: #FFF;
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(top, #656363, #000000);
+    background-image: -moz-linear-gradient(top, #bbb, #eee);
+    background-image: -ms-linear-gradient(top, #bbb, #eee);
+    background-image: -o-linear-gradient(top, #bbb, #eee);
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+    margin: 0 7px;
+    padding: 18px 0;
+    display: inline-block;
+    position: relative;
+}
+
+#countdown #tiles > span:before{
+	content:"";
+	width: 100%;
+	height: 13px;
+	background: #111;
+	display: block;
+	padding: 0 3px;
+	position: absolute;
+	top: 41%; left: -3px;
+	z-index: -1;
+}
+
+#countdown #tiles > span:after{
+	content:"";
+	width: 100%;
+	height: 1px;
+	background: #eee;
+	border-top: 1px solid #333;
+	display: block;
+	position: absolute;
+	top: 48%; left: 0;
+}
+
+#countdown .labels{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	bottom: 8px;
+}
+
+#countdown .labels li{
+	margin-top: 10px;
+	width: 279px;
+	font: bold 15px 'Droid Sans', Arial, sans-serif;
+	color: #f47321;
+	text-shadow: 1px 1px 0px #000;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+}
+/* media queries */
+
+/*below 1199px */
+@media (max-width: 1199px){
+	button#event{
+		font-size: 60px;
+	}
+	#countdown .labels li{
+	width:229px;
+	}
+#countdown #tiles > span{
+	width:218px;
+	}
+}
+/* below 991px */
+@media (max-width: 991px){
+		button#event{
+		font-size: 45px;
+	}
+	#countdown .labels li{
+	width:174px;
+}
+	#countdown #tiles > span{
+	width:163px;
+	}
+}
+/* below 767px */
+@media (max-width: 767px){
+	button#event{
+		font-size: 40px;
+	}
+	#countdown .labels li{
+	width:144px;
+	}
+	#countdown #tiles > span{
+	width:133px;
+	}
+}
+@media (max-width: 662px){
+	button#event{
+		font-size: 20px;
+	}
+	#countdown .labels li{
+	width: 63px;
+	}
+#countdown #tiles > span{
+	width: 60px;
+	}
+	button.btn.btn-primary{
+		padding:20px 45px;
+		font-size: 25px;
+	}
+	.footer{
+		padding: 35px 0;
+	}
+}
+@media (max-width: 376px){
+	button#event{
+		font-size: 15px;
+	}
+}
